@@ -1,0 +1,12 @@
+title: "Felipe Bossolani"
+description: "Founder da MeuPortfolio (vendida para a Warren) e co-founder de uma empresa adquirida pela Britech. Hoje CPTO da Warren. Há mais de 20 anos construindo produtos, plataformas e times de alta performance, com foco em engenharia sólida, decisões difíceis e IA como alavanca estratégica."
+author: "Felipe Bossolani"
+email: "felipe@bossolani.com"
+url: "https://felipebossolani.github.io/my-website"
+
+theme: jekyll-theme-minimal
+
+show_downloads: false
+
+markdown: kramdown
+highlighter: rouge
