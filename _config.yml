@@ -10,3 +10,5 @@ show_downloads: false
 
 markdown: kramdown
 highlighter: rouge
+
+permalink: /:year/:month/:day/:title/
