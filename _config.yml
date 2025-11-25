@@ -13,3 +13,5 @@ markdown: kramdown
 highlighter: rouge
 
 permalink: /:year/:month/:day/:title/
+
+timezone: America/Sao_Paulo
