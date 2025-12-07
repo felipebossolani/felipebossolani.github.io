@@ -255,7 +255,21 @@ Isso transforma o Claude Code em uma ferramenta multi-LLM unificada.
 
 ---
 
-## 12. Conclusão
+## 12. Considerações Importantes
+
+Antes de adotar essa solução em produção, vale a pena pontuar alguns detalhes:
+
+*   **Custos e Limites:** Diferente do Claude Code original (onde o billing é direto com a Anthropic), usar o OpenRouter envolve as tarifas e quotas da plataforma ou do provedor escolhido. Fique atento aos limites de uso e rate limits dos modelos free/paid.
+*   **Prós e Contras:**
+    *   *Opte pelo CCR quando:* Quiser economizar, testar novos modelos (como DeepSeek ou Gemini), ou precisar de privacidade/local hosting.
+    *   *Mantenha o original quando:* Precisar da máxima confiabilidade e integração nativa garantida pela Anthropic, especialmente para tarefas críticas.
+*   **Compatibilidade:** Nem todos os modelos "falam" a linguagem de function calling do Claude Code com a mesma fluidez. Modelos menores podem alucinar comandos ou falhar em tarefas complexas de refatoração. Teste sempre!
+*   **Segurança:** Sua API Key do OpenRouter (ou OpenAI/Anthropic) é sensível. Nunca a commite em repositórios públicos e prefira sempre usar variáveis de ambiente (`export KEY=...`) ao invés de hardcode no `config.json`.
+*   **Alternativas:** O CCR é uma excelente ferramenta, mas existem outras abordagens, como proxies locais ou setups híbridos. Escolha a que melhor se adapta ao seu workflow.
+
+---
+
+## 13. Conclusão
 
 O **Claude Code** é excepcional como ambiente de desenvolvimento assistido. Ao conectar o **OpenRouter** via **CCR**, ele se torna agnóstico, permitindo o uso de dezenas de modelos diferentes, mantendo seu histórico e fluxo de trabalho.
 
