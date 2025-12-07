@@ -260,6 +260,7 @@ Isso transforma o Claude Code em uma ferramenta multi-LLM unificada.
 Antes de adotar essa solução em produção, vale a pena pontuar alguns detalhes:
 
 *   **Custos e Limites:** Diferente do Claude Code original (onde o billing é direto com a Anthropic), usar o OpenRouter envolve as tarifas e quotas da plataforma ou do provedor escolhido. Fique atento aos limites de uso e rate limits dos modelos free/paid.
+*   **Atenção com Projetos Profissionais:** O ideal é não utilizar camadas "free" para projetos profissionais ou código proprietário sem antes ler atentamente os Termos de Uso. Em muitos casos, modelos gratuitos podem reter dados ou utilizá-los para treinamento. Para garantir a confidencialidade do seu IP (Propriedade Intelectual), prefira modelos pagos com contratos claros de não-retenção de dados.
 *   **Prós e Contras:**
     *   *Opte pelo CCR quando:* Quiser economizar, testar novos modelos (como DeepSeek ou Gemini), ou precisar de privacidade/local hosting.
     *   *Mantenha o original quando:* Precisar da máxima confiabilidade e integração nativa garantida pela Anthropic, especialmente para tarefas críticas.
